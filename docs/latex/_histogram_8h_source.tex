@@ -1,0 +1,48 @@
+\hypertarget{_histogram_8h_source}{}\doxysection{Histogram.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ Histogram.h\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifndef\ HISTOGRAM\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ HISTOGRAM\_H}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}HistogramBase.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_hist}{Hist}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_hist_1_1_histogram_base}{Hist::HistogramBase}}}
+\DoxyCodeLine{00030\ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_hist_1_1_histogram_af977dcd4bcb58755c0d142bd94a0c700}{Histogram}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_hist_1_1_histogram_af977dcd4bcb58755c0d142bd94a0c700}{Histogram}}(std::unique\_ptr<Logger>\ log)}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{namespace_hist}{Hist}}::\mbox{\hyperlink{class_hist_1_1_histogram_base}{HistogramBase}}(std::move(log))\{\};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_hist_1_1_histogram_af977dcd4bcb58755c0d142bd94a0c700}{Histogram}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}}\ \&base)}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{namespace_hist}{Hist}}::\mbox{\hyperlink{class_hist_1_1_histogram_base}{HistogramBase}}(base)\{\};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_hist_1_1_histogram_af977dcd4bcb58755c0d142bd94a0c700}{Histogram}}(\mbox{\hyperlink{class_hist_1_1_histogram_af977dcd4bcb58755c0d142bd94a0c700}{Histogram}}\ \&\&base)}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{namespace_hist}{Hist}}::HistogramBase(base)\{\};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \string~Histogram()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hist_1_1_histogram_abca9f90eddf6568d900cf792ba06e481}{add}}(\mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}});}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}}\ \mbox{\hyperlink{class_hist_1_1_histogram_a5221928b300067d95706cc703f165ccb}{getMode}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}}\ \mbox{\hyperlink{class_hist_1_1_histogram_a8fb66ae482f011d8a2dc497e8c4aca9e}{getMinValue}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}}\ \mbox{\hyperlink{class_hist_1_1_histogram_abf969ae799fd1bd5f39b56d0b3a4e33b}{getMaxValue}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ std::unordered\_map<Hist::EInteger,\ int>\ \mbox{\hyperlink{class_hist_1_1_histogram_a8bd4730317fa37698b7b71b16ba4bcec}{getAllValues}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00109\ \ \ \ \ \};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \}}
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !HISTOGRAM\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

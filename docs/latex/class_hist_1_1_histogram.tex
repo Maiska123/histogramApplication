@@ -1,0 +1,220 @@
+\hypertarget{class_hist_1_1_histogram}{}\doxysection{Hist\+::Histogram Class Reference}
+\label{class_hist_1_1_histogram}\index{Hist::Histogram@{Hist::Histogram}}
+
+
+\mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}} class. Derived from \mbox{\hyperlink{class_hist_1_1_histogram_base}{Histogram\+Base}}.  
+
+
+
+
+{\ttfamily \#include $<$Histogram.\+h$>$}
+
+Inheritance diagram for Hist\+::Histogram\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hist_1_1_histogram}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hist_1_1_histogram_af977dcd4bcb58755c0d142bd94a0c700}{Histogram}} ()=delete
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}} class Constructor. Derived from \mbox{\hyperlink{class_hist_1_1_histogram_base}{Histogram\+Base}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hist_1_1_histogram_adbe53727953346d8e4384bf0310de562}\label{class_hist_1_1_histogram_adbe53727953346d8e4384bf0310de562}} 
+{\bfseries Histogram} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} $>$ log)
+\item 
+\mbox{\Hypertarget{class_hist_1_1_histogram_a554fee026235cfd72b0dc55814e54c36}\label{class_hist_1_1_histogram_a554fee026235cfd72b0dc55814e54c36}} 
+{\bfseries Histogram} (const \mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}} \&base)
+\item 
+\mbox{\Hypertarget{class_hist_1_1_histogram_a6a0c411b39878f4867ab44321c69e74b}\label{class_hist_1_1_histogram_a6a0c411b39878f4867ab44321c69e74b}} 
+{\bfseries Histogram} (\mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}} \&\&base)
+\item 
+void \mbox{\hyperlink{class_hist_1_1_histogram_abca9f90eddf6568d900cf792ba06e481}{add}} (\mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}})
+\begin{DoxyCompactList}\small\item\em Adds given EInteger value to the log. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}} \mbox{\hyperlink{class_hist_1_1_histogram_a5221928b300067d95706cc703f165ccb}{get\+Mode}} () const
+\begin{DoxyCompactList}\small\item\em Return the value that occurs most often in the dataset. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}} \mbox{\hyperlink{class_hist_1_1_histogram_a8fb66ae482f011d8a2dc497e8c4aca9e}{get\+Min\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Return the smallest value in the data set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}} \mbox{\hyperlink{class_hist_1_1_histogram_abf969ae799fd1bd5f39b56d0b3a4e33b}{get\+Max\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Return the largest value in the data set. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{Hist\+::\+EInteger}}, int $>$ \mbox{\hyperlink{class_hist_1_1_histogram_a8bd4730317fa37698b7b71b16ba4bcec}{get\+All\+Values}} () const
+\begin{DoxyCompactList}\small\item\em Return all\+Values held by Histograms Logger-\/class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hist_1_1_histogram_base}{Hist\+::\+Histogram\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hist_1_1_histogram_base_a49ed4046b3b9d976a004a7c8354224fa}\label{class_hist_1_1_histogram_base_a49ed4046b3b9d976a004a7c8354224fa}} 
+{\bfseries Histogram\+Base} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} $>$)
+\item 
+\mbox{\Hypertarget{class_hist_1_1_histogram_base_a0a18c27a12d766a5d1336c67d806a6fe}\label{class_hist_1_1_histogram_base_a0a18c27a12d766a5d1336c67d806a6fe}} 
+{\bfseries Histogram\+Base} (const \mbox{\hyperlink{class_hist_1_1_histogram_base}{Histogram\+Base}} \&)
+\item 
+\mbox{\Hypertarget{class_hist_1_1_histogram_base_a4907437dc504ec4f5e1715a4555e9988}\label{class_hist_1_1_histogram_base_a4907437dc504ec4f5e1715a4555e9988}} 
+{\bfseries Histogram\+Base} (\mbox{\hyperlink{class_hist_1_1_histogram_base}{Histogram\+Base}} \&\&)
+\item 
+virtual void \mbox{\hyperlink{class_hist_1_1_histogram_base_a43049e8c81f1cb111d603daa0828126e}{add}} (\mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}})=0
+\item 
+virtual \mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}} \mbox{\hyperlink{class_hist_1_1_histogram_base_a9cbdcdb15d2b41aa74abd61287c6c7a0}{get\+Mode}} () const =0
+\item 
+virtual \mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}} \mbox{\hyperlink{class_hist_1_1_histogram_base_a2d02e867ddfe335df90581d7e6c4382d}{get\+Min\+Value}} () const =0
+\item 
+virtual \mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}} \mbox{\hyperlink{class_hist_1_1_histogram_base_a1fcfbd1c76bcee3b20b08807a77f471b}{get\+Max\+Value}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_hist_1_1_histogram_base}{Hist\+::\+Histogram\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hist_1_1_histogram_base_a306577ee7d2fc591e5a3d4c284d906e0}\label{class_hist_1_1_histogram_base_a306577ee7d2fc591e5a3d4c284d906e0}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} $>$ {\bfseries m\+\_\+log}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}} class. Derived from \mbox{\hyperlink{class_hist_1_1_histogram_base}{Histogram\+Base}}. 
+
+Keeps track of values of \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} type. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hist_1_1_histogram_af977dcd4bcb58755c0d142bd94a0c700}\label{class_hist_1_1_histogram_af977dcd4bcb58755c0d142bd94a0c700}} 
+\index{Hist::Histogram@{Hist::Histogram}!Histogram@{Histogram}}
+\index{Histogram@{Histogram}!Hist::Histogram@{Hist::Histogram}}
+\doxysubsubsection{\texorpdfstring{Histogram()}{Histogram()}}
+{\footnotesize\ttfamily Hist\+::\+Histogram\+::\+Histogram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}} class Constructor. Derived from \mbox{\hyperlink{class_hist_1_1_histogram_base}{Histogram\+Base}}. 
+
+Creates \mbox{\hyperlink{class_hist_1_1_histogram_base}{Histogram\+Base}} class based on given \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} class. 
+\begin{DoxyParams}{Parameters}
+{\em log} & std\+::unique\+\_\+ptr$<$\+Logger$>$\\
+\hline
+\end{DoxyParams}
+
+
+Creates \mbox{\hyperlink{class_hist_1_1_histogram_base}{Histogram\+Base}} class based on given \mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}} class (by value). 
+\begin{DoxyParams}{Parameters}
+{\em \&base} & const \mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}}\\
+\hline
+\end{DoxyParams}
+
+
+Creates \mbox{\hyperlink{class_hist_1_1_histogram_base}{Histogram\+Base}} class based on given \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} class. 
+\begin{DoxyParams}{Parameters}
+{\em \&\&base} & \mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hist_1_1_histogram_abca9f90eddf6568d900cf792ba06e481}\label{class_hist_1_1_histogram_abca9f90eddf6568d900cf792ba06e481}} 
+\index{Hist::Histogram@{Hist::Histogram}!add@{add}}
+\index{add@{add}!Hist::Histogram@{Hist::Histogram}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily Hist\+::\+Histogram\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{Hist\+::\+EInteger}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds given EInteger value to the log. 
+
+Value is added to histograms protected Logger-\/class. 
+\begin{DoxyParams}{Parameters}
+{\em value} & EInteger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hist_1_1_histogram_base}{Hist\+::\+Histogram\+Base}}.
+
+\mbox{\Hypertarget{class_hist_1_1_histogram_a8bd4730317fa37698b7b71b16ba4bcec}\label{class_hist_1_1_histogram_a8bd4730317fa37698b7b71b16ba4bcec}} 
+\index{Hist::Histogram@{Hist::Histogram}!getAllValues@{getAllValues}}
+\index{getAllValues@{getAllValues}!Hist::Histogram@{Hist::Histogram}}
+\doxysubsubsection{\texorpdfstring{getAllValues()}{getAllValues()}}
+{\footnotesize\ttfamily Hist\+::\+Histogram\+::get\+All\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return all\+Values held by Histograms Logger-\/class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::unordered\+\_\+map$<$\+Hist\+::\+EInteger, int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hist_1_1_histogram_abf969ae799fd1bd5f39b56d0b3a4e33b}\label{class_hist_1_1_histogram_abf969ae799fd1bd5f39b56d0b3a4e33b}} 
+\index{Hist::Histogram@{Hist::Histogram}!getMaxValue@{getMaxValue}}
+\index{getMaxValue@{getMaxValue}!Hist::Histogram@{Hist::Histogram}}
+\doxysubsubsection{\texorpdfstring{getMaxValue()}{getMaxValue()}}
+{\footnotesize\ttfamily Hist\+::\+Histogram\+::get\+Max\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the largest value in the data set. 
+
+(According to default ordering relation of integer numbers) 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+EInteger 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hist_1_1_histogram_base}{Hist\+::\+Histogram\+Base}}.
+
+\mbox{\Hypertarget{class_hist_1_1_histogram_a8fb66ae482f011d8a2dc497e8c4aca9e}\label{class_hist_1_1_histogram_a8fb66ae482f011d8a2dc497e8c4aca9e}} 
+\index{Hist::Histogram@{Hist::Histogram}!getMinValue@{getMinValue}}
+\index{getMinValue@{getMinValue}!Hist::Histogram@{Hist::Histogram}}
+\doxysubsubsection{\texorpdfstring{getMinValue()}{getMinValue()}}
+{\footnotesize\ttfamily Hist\+::\+Histogram\+::get\+Min\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the smallest value in the data set. 
+
+(According to default ordering relation of integer numbers) 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+EInteger 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hist_1_1_histogram_base}{Hist\+::\+Histogram\+Base}}.
+
+\mbox{\Hypertarget{class_hist_1_1_histogram_a5221928b300067d95706cc703f165ccb}\label{class_hist_1_1_histogram_a5221928b300067d95706cc703f165ccb}} 
+\index{Hist::Histogram@{Hist::Histogram}!getMode@{getMode}}
+\index{getMode@{getMode}!Hist::Histogram@{Hist::Histogram}}
+\doxysubsubsection{\texorpdfstring{getMode()}{getMode()}}
+{\footnotesize\ttfamily Hist\+::\+Histogram\+::get\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the value that occurs most often in the dataset. 
+
+(I.\+e. there exists no other value that occurs more often than the return value) 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+EInteger 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hist_1_1_histogram_base}{Hist\+::\+Histogram\+Base}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Histogram.\+h\item 
+Histogram.\+cpp\end{DoxyCompactItemize}

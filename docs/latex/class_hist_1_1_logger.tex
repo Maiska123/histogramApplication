@@ -1,0 +1,153 @@
+\hypertarget{class_hist_1_1_logger}{}\doxysection{Hist\+::Logger Class Reference}
+\label{class_hist_1_1_logger}\index{Hist::Logger@{Hist::Logger}}
+
+
+\mbox{\hyperlink{class_hist_1_1_logger}{Logger}} class. Interface and storage for EInteger values provided for \mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}}.  
+
+
+
+
+{\ttfamily \#include $<$Log.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hist_1_1_logger_af6d6f2420af732518e4e7c99786bc496}{Logger}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} class Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hist_1_1_logger_a1a32558a1a870cdacb90d99632ff1a08}\label{class_hist_1_1_logger_a1a32558a1a870cdacb90d99632ff1a08}} 
+{\bfseries Logger} (std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}}, int $>$ \&)
+\item 
+void \mbox{\hyperlink{class_hist_1_1_logger_a1883ca43a24fefc3d4bca3e1940bb4f2}{add\+One}} (\mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}})
+\begin{DoxyCompactList}\small\item\em Adds given EInteger value to the log. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hist_1_1_logger_adf8012f85da1fe5b9c903f863521b57f}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Checks if \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} is empty from values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hist_1_1_logger_a18b3eb2c50d215c9e47d05cbfad90561}{delete\+One}} (\mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}})
+\begin{DoxyCompactList}\small\item\em Deletes one occurrence of given EInteger value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hist_1_1_logger_a2bf0a90a819210e342c9951c844b60b2}{delete\+All}} ()
+\begin{DoxyCompactList}\small\item\em Deletes all values stored in \mbox{\hyperlink{class_hist_1_1_logger}{Logger}}. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{EInteger}}, int $>$ \mbox{\hyperlink{class_hist_1_1_logger_ab31d5f28c586e07b9cec656bed1ba2b5}{get\+Values}} () const
+\begin{DoxyCompactList}\small\item\em Returns all values stored in \mbox{\hyperlink{class_hist_1_1_logger}{Logger}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_hist_1_1_logger}{Logger}} class. Interface and storage for EInteger values provided for \mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}}. 
+
+Keeps track of values for \mbox{\hyperlink{class_hist_1_1_histogram}{Histogram}} class to use. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hist_1_1_logger_af6d6f2420af732518e4e7c99786bc496}\label{class_hist_1_1_logger_af6d6f2420af732518e4e7c99786bc496}} 
+\index{Hist::Logger@{Hist::Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Hist::Logger@{Hist::Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}}
+{\footnotesize\ttfamily Hist\+::\+Logger\+::\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_hist_1_1_logger}{Logger}} class Constructor. 
+
+Creates \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} class with initialized empty Log.
+
+Creates \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} class based on given std\+::unordered\+\_\+map$<$\+EInteger, int$>$ object (by value). 
+\begin{DoxyParams}{Parameters}
+{\em std\+::unordered\+\_\+map$<$\+EInteger,int$>$} & values \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hist_1_1_logger_a1883ca43a24fefc3d4bca3e1940bb4f2}\label{class_hist_1_1_logger_a1883ca43a24fefc3d4bca3e1940bb4f2}} 
+\index{Hist::Logger@{Hist::Logger}!addOne@{addOne}}
+\index{addOne@{addOne}!Hist::Logger@{Hist::Logger}}
+\doxysubsubsection{\texorpdfstring{addOne()}{addOne()}}
+{\footnotesize\ttfamily Hist\+::\+Logger\+::add\+One (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{Hist\+::\+EInteger}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Adds given EInteger value to the log. 
+
+Adds one to \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} values based on given EInteger. 
+\begin{DoxyParams}{Parameters}
+{\em value} & EInteger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hist_1_1_logger_a2bf0a90a819210e342c9951c844b60b2}\label{class_hist_1_1_logger_a2bf0a90a819210e342c9951c844b60b2}} 
+\index{Hist::Logger@{Hist::Logger}!deleteAll@{deleteAll}}
+\index{deleteAll@{deleteAll}!Hist::Logger@{Hist::Logger}}
+\doxysubsubsection{\texorpdfstring{deleteAll()}{deleteAll()}}
+{\footnotesize\ttfamily Hist\+::\+Logger\+::delete\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes all values stored in \mbox{\hyperlink{class_hist_1_1_logger}{Logger}}. 
+
+Initialized \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} empty. 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hist_1_1_logger_a18b3eb2c50d215c9e47d05cbfad90561}\label{class_hist_1_1_logger_a18b3eb2c50d215c9e47d05cbfad90561}} 
+\index{Hist::Logger@{Hist::Logger}!deleteOne@{deleteOne}}
+\index{deleteOne@{deleteOne}!Hist::Logger@{Hist::Logger}}
+\doxysubsubsection{\texorpdfstring{deleteOne()}{deleteOne()}}
+{\footnotesize\ttfamily Hist\+::\+Logger\+::delete\+One (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_hist_a3fddae74b10b16d7965f618c38a2291a}{Hist\+::\+EInteger}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Deletes one occurrence of given EInteger value. 
+
+Subtracts one from given EInteger value occurrences. If given value is not found in stored values, no modification happens. 
+\begin{DoxyParams}{Parameters}
+{\em value} & EInteger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hist_1_1_logger_ab31d5f28c586e07b9cec656bed1ba2b5}\label{class_hist_1_1_logger_ab31d5f28c586e07b9cec656bed1ba2b5}} 
+\index{Hist::Logger@{Hist::Logger}!getValues@{getValues}}
+\index{getValues@{getValues}!Hist::Logger@{Hist::Logger}}
+\doxysubsubsection{\texorpdfstring{getValues()}{getValues()}}
+{\footnotesize\ttfamily Hist\+::\+Logger\+::get\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns all values stored in \mbox{\hyperlink{class_hist_1_1_logger}{Logger}}. 
+
+Returns all values stored in \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} by copy. 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::unordered\+\_\+map$<$\+EInteger, int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hist_1_1_logger_adf8012f85da1fe5b9c903f863521b57f}\label{class_hist_1_1_logger_adf8012f85da1fe5b9c903f863521b57f}} 
+\index{Hist::Logger@{Hist::Logger}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Hist::Logger@{Hist::Logger}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily Hist\+::\+Logger\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks if \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} is empty from values. 
+
+Checks \mbox{\hyperlink{class_hist_1_1_logger}{Logger}} for values, if one or more found, returns true. 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Log.\+h\item 
+Log.\+cpp\end{DoxyCompactItemize}
