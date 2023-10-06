@@ -7,6 +7,12 @@
 #include <string>
 #include <cstring>
 
+void print_usage()
+{
+    printf("Usage: histogramApplication.exe 10 1 0\nWhere params are \n 10 - iteration count \n \
+             1 - statistics on/off \n 0 - all values and occurrences on/off\n Output: no default output for iterations, use params to get output ");
+}
+
 int main(int argc, char const *argv[])
 {
 
@@ -22,7 +28,8 @@ int main(int argc, char const *argv[])
         arg = argv[3];
         value = std::stoi(arg, &pos);
 
-        if (value == 1) {
+        if (value == 1)
+        {
             allValuesOutput = 1;
         }
         [[fallthrough]];
@@ -30,7 +37,8 @@ int main(int argc, char const *argv[])
         arg = argv[2];
         value = std::stoi(arg, &pos);
 
-        if (value == 1) {
+        if (value == 1)
+        {
             extensiveLogging = 1;
         }
         [[fallthrough]];
@@ -42,7 +50,10 @@ int main(int argc, char const *argv[])
             iterationCount = value;
         break;
     default:
-        break;
+        print_usage();
+        exit(EXIT_FAILURE);
+
+        break; // exists before this
     }
 
     RandomEintegerGenerator *randomGenerator = new RandomEintegerGenerator();

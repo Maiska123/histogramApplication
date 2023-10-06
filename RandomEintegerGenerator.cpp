@@ -4,7 +4,7 @@
 #include "RandomEintegerGenerator.h"
 #include "HistogramBase.h"
 
-RandomEintegerGenerator::RandomEintegerGenerator(){};
+// RandomEintegerGenerator::RandomEintegerGenerator(){};
 
 Hist::EInteger RandomEintegerGenerator::operator()() const
 {
